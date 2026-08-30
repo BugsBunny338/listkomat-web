@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lístkomat — podpora</title>
+<meta name="description" content="Jízdenka na MHD jednou SMSkou. Bez registrace, bez dobíjení kreditu, bez internetu — v 10 českých městech.">
 <style>
   :root { --teal: #56C4CF; --ink: #1c1c1e; --muted: #6b7177; }
   * { box-sizing: border-box; }
@@ -23,6 +24,9 @@
   .cities { color: var(--muted); }
   .note { background: rgba(86,196,207,.10); border-left: 3px solid var(--teal);
           padding: 12px 16px; border-radius: 8px; margin: 12px 0; }
+  ul.why { list-style: none; padding-left: 0; margin: 12px 0; }
+  ul.why li { padding-left: 26px; position: relative; margin-bottom: 6px; }
+  ul.why li::before { content: "✓"; position: absolute; left: 0; color: var(--teal); font-weight: 700; }
   footer { color: var(--muted); font-size: 14px; text-align:center; margin-top: 48px; }
   .lang { color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: .06em; margin-top: 40px; }
   hr { border: none; border-top: 1px solid #eee; margin: 40px 0; }
@@ -40,25 +44,36 @@
       </svg>
     </div>
     <h1>Lístkomat</h1>
-    <p class="tag">Jízdenky MHD přes SMS · Czech transit tickets by SMS</p>
+    <p class="tag">SMS jízdenky bez registrace · SMS transit tickets, no signup</p>
     <span class="pill">Podpora / Support</span>
   </header>
 
   <h2>Co to je</h2>
-  <p>Lístkomat koupí jízdenku městské hromadné dopravy jedinou SMS — bez toho, abyste si pamatovali
-     telefonní číslo a kód lístku. Vyberte město, zvolte délku jízdenky a aplikace předvyplní správnou SMS.
-     Lístek koupíte jejím odesláním.</p>
+  <p>Jízdenka na MHD jednou SMSkou. Lístkomat si za vás pamatuje telefonní čísla i kódy SMS jízdenek
+     v 10 českých městech. Vyberete lístek, appka předvyplní SMS a vy ji jen odešlete — jízdenka
+     přijde obratem a cena se objeví ve vyúčtování od vašeho operátora.</p>
   <p class="cities">Praha · Brno · Ostrava · Plzeň · Liberec · Olomouc · Ústí&nbsp;nad&nbsp;Labem ·
      Hradec&nbsp;Králové · České&nbsp;Budějovice · Pardubice</p>
+
+  <h2>Proč Lístkomat</h2>
+  <ul class="why">
+    <li><strong>Žádná registrace ani účet</strong> — otevřete a kupujete.</li>
+    <li><strong>Žádné dobíjení kreditu</strong> — platíte přes vyúčtování u operátora.</li>
+    <li><strong>Funguje bez internetu</strong> — stačí signál na SMS.</li>
+    <li><strong>10 měst v jedné appce</strong> — ceníky se aktualizují samy, poslední známý funguje i offline.</li>
+  </ul>
   <div class="note"><strong>Pro nákup je potřeba česká SIM karta.</strong> Cenu lístku účtuje váš
      operátor prostřednictvím prémiové SMS (cena = cena lístku). Jízdenka platí jen ve zvoleném městě.</div>
 
   <h2>Jak to funguje</h2>
   <ol>
-    <li>Otevřete appku — podle polohy nabídne nejbližší město (nebo si ho vyberete ručně).</li>
+    <li>Otevřete appku — podle polohy nabídne nejbližší město (nebo si ho vyberete ručně).
+        Poloha nikam neodchází.</li>
     <li>Klepnete na lístek → otevře se předvyplněná SMS.</li>
     <li>SMS odešlete. Operátor vám obratem pošle jízdenku.</li>
   </ol>
+  <p>Platnost lístku pak běží na zamčené obrazovce i v Dynamic Islandu. V Praze a Brně navíc appka
+     umí živou mapu MHD — tramvaje, šaliny, autobusy i trolejbusy.</p>
 
   <h2>Kontakt / Contact</h2>
   <p>Dotazy, problémy, návrhy: <a href="mailto:jiri.zajic@mensa.cz">jiri.zajic@mensa.cz</a></p>
@@ -67,13 +82,38 @@
   <hr>
 
   <p class="lang">English</p>
-  <p>Lístkomat buys a Czech city public-transport ticket with a single SMS — without memorising the
-     phone number and ticket code. Pick a city, choose a ticket length, and the app pre-fills the
-     correct SMS; send it to buy.</p>
+  <h2>What it is</h2>
+  <p>Buy a public-transport ticket with a single SMS. Lístkomat remembers the phone numbers and
+     ticket codes for SMS tickets in 10 Czech cities. Pick a ticket, the app pre-fills the SMS, you
+     just hit Send — the ticket arrives right back and the price shows up on your phone bill.</p>
+  <p class="cities">Prague · Brno · Ostrava · Plzeň · Liberec · Olomouc · Ústí&nbsp;nad&nbsp;Labem ·
+     Hradec&nbsp;Králové · České&nbsp;Budějovice · Pardubice</p>
+
+  <h2>Why Lístkomat</h2>
+  <ul class="why">
+    <li><strong>No registration, no account</strong> — open the app and buy.</li>
+    <li><strong>No credit to top up</strong> — billed through your mobile operator.</li>
+    <li><strong>Works without internet</strong> — an SMS signal is all it takes.</li>
+    <li><strong>10 cities in one app</strong> — prices update automatically, and the last known
+        prices still work offline.</li>
+  </ul>
   <div class="note"><strong>A Czech SIM card is required to buy tickets.</strong> The fare is charged
      by your mobile carrier via premium SMS (price = ticket price); tickets are valid only in the
      chosen city. Visitors on a foreign carrier can't send the premium SMS.</div>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>Open the app — it offers the nearest city based on your location (or pick one by hand).
+        Your location never leaves the device.</li>
+    <li>Tap a ticket → a pre-filled SMS opens.</li>
+    <li>Send it. Your operator sends the ticket straight back.</li>
+  </ol>
+  <p>The ticket's validity then counts down on the Lock Screen and in the Dynamic Island. In Prague
+     and Brno the app also shows a live map of trams, buses and trolleybuses.</p>
+
+  <h2>Contact</h2>
   <p>Questions / issues: <a href="mailto:jiri.zajic@mensa.cz">jiri.zajic@mensa.cz</a></p>
+  <p><a href="privacy.html">Privacy Policy →</a></p>
 
   <footer>Lístkomat · made with ❤︎ in Czechia</footer>
 </div>
