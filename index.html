@@ -15,9 +15,9 @@
          color: var(--ink); background: #fff; }
   .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
   header { text-align: center; padding: 28px 0 8px; }
-  .logo { width: 96px; height: 96px; border-radius: 22px; background: var(--teal);
-          display: inline-flex; align-items: center; justify-content: center; }
-  .logo { overflow: hidden; }
+  /* Same icon box as beer-llama-web, so both support pages line up. */
+  .logo { width: 112px; height: 112px; border-radius: 25px; overflow: hidden; display: inline-block;
+          box-shadow: 0 6px 20px rgba(0,0,0,.18); }
   .logo img { width: 100%; height: 100%; display: block; }
   h1 { font-size: 34px; margin: 16px 0 4px; }
   .tag { color: var(--muted); margin: 0 0 8px; }
@@ -43,7 +43,7 @@
 <div class="wrap">
   <header>
     <div class="logo">
-      <img src="img/app-icon.png" width="96" height="96" alt="">
+      <img src="img/app-icon.png" width="112" height="112" alt="">
     </div>
     <h1>Lístkomat</h1>
     <p class="tag">SMS jízdenky bez registrace · SMS transit tickets, no signup</p>
